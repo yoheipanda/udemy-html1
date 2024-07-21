@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/*                共通
+======================================================= */
+/*                leyout
+======================================================= */
+.l-wrapper {
+  overflow: hidden;
+}
+
+/*                header
+======================================================= */
+.p-hd {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 46;
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  z-index: 1;
+  position: relative;
+}/*# sourceMappingURL=home_first_view.css.map */

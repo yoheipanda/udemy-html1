@@ -1,0 +1,26 @@
+@use "setting" as *;
+////////////////////////////////////////////////////////////
+///     　　　　　全ページ共通の　first_view   　　　　　////
+////////////////////////////////////////////////////////////
+@mixin common_first_view {
+  /*                leyout
+======================================================= */
+  .l-wrapper {
+    overflow: hidden;
+  }
+  /*                header
+======================================================= */
+
+.p-hd{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 46;
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  z-index: 1;
+  position: relative;
+}
+
+} //@mixin
