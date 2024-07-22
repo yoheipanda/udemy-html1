@@ -16,4 +16,13 @@
   z-index: 1;
   position: relative;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5019607843);
+}
+
+.p-hd__nav {
+  height: 100%;
+}
+
+.p-hd__list {
+  display: flex;
+  height: 100%;
 }/*# sourceMappingURL=home_first_view.css.map */
