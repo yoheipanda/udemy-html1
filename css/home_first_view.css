@@ -25,4 +25,34 @@
 .p-hd__list {
   display: flex;
   height: 100%;
+}
+
+.p-hd__item {
+  height: 100%;
+}
+
+.p-hd__link {
+  padding: 0 1.5em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #122444;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.p-hd__nav {
+  position: relative;
+  height: 100%;
+}
+@media only screen and (max-width: 767px) {
+  .p-hd__nav {
+    display: none;
+  }
+}
+
+.p-hd__list {
+  display: flex;
+  height: 100%;
 }/*# sourceMappingURL=home_first_view.css.map */
