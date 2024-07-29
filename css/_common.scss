@@ -26,17 +26,30 @@
 /*                utility
 ======================================================= */
 @media only screen and (min-width: 768px){
+  .u-hover-line{
+    &:hover{
+      .u-hover-line-child{
+        &::before{
+          opacity: 1;
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+  }
   .u-hover-line-child{
     position: relative;
     &::before{
       display: block;
-      width: 100%;
+      width: 0;
       height: 1px;
-      left: 0;
-      bottom: 0;
+      left: 50%;
+      bottom: -0.3em;
       content: "";
       background: $siteColor;
       position: absolute;
+      opacity: 0;
+      transition: all 0.5s;
     }
 
 }
