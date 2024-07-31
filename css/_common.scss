@@ -10,6 +10,21 @@
     margin: 0 auto;
   }
 
+/*                見出し
+=======================================================*/
+.c-section-title{
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+}
+
+// 本文
+.c-section-text{
+  line-height: 2.6;
+}
+
+
 /*                テキスト装飾
 ======================================================= */
   .text_right,.alignright{ text-align:right;}
