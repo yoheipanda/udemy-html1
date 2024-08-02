@@ -5,7 +5,15 @@
 @mixin common_first_view {
   .l-wrapper {
     overflow: hidden;
+    padding-top: 80px;
   }
+.l-hd{
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
 
 .p-hd{
   display: flex;
