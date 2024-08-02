@@ -110,8 +110,20 @@ a {
   letter-spacing: 0.1em;
 }
 
+/*                本文テキスト
+=======================================================*/
 .c-section-text {
   line-height: 2.6;
+}
+
+.c-grid-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px 40px;
+}
+
+.c-grid-images__item--grid-large {
+  grid-column: span 2;
 }
 
 /*                テキスト装飾
