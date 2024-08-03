@@ -208,4 +208,21 @@ html.is-fixed {
   margin-top: 38px;
   font-size: 15px;
   font-style: YuGothic-Medium;
+}
+
+.p-owner-introduction {
+  margin: top 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 40px;
+}
+
+.p-owner-introduction__text {
+  margin-top: 52px;
+}
+
+.p-owner-introduction__img {
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
 }/*# sourceMappingURL=home.css.map */
