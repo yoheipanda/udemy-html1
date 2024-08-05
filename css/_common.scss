@@ -38,6 +38,30 @@
   }
 }
 
+.c-info-table{
+  margin-top: 30px;
+}
+
+.c-info-table__dl{
+  display: flex;
+  border-top: 1px solid #415069;
+  &:last-child{
+    border-bottom:1px solid #415069;
+  }
+}
+
+.c-info-table__dt{
+  width: 120px;
+}
+
+.c-info-table__dd{
+  width: calc(100% - 120px);
+}
+
+.c-info-table__dt, .c-info-table__dd{
+  padding: 20px 0 18px;
+  line-height: 2;
+}
 
 /*                テキスト装飾
 ======================================================= */
