@@ -22,6 +22,14 @@
 
 .p-section{
   padding: 0 50px;
+      // .p-section--gallery
+      &--gallery{
+      margin-top: 165px;
+      }
+    }
+  // .p-section--sns
+    &--sns{
+    margin-top: 65px;
 }
 
 .p-message-text{
@@ -45,4 +53,11 @@ margin-top: 52px;
   border-radius: 50%;
   overflow: hidden;
   margin: auto;
+}
+
+.p-sns-icons{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:0 30px;
+  width: 150px;
 }

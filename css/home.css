@@ -228,6 +228,9 @@ html.is-fixed {
 .p-section {
   padding: 0 50px;
 }
+.p-section--sns {
+  margin-top: 65px;
+}
 
 .p-message-text {
   margin-top: 38px;
@@ -250,4 +253,11 @@ html.is-fixed {
   border-radius: 50%;
   overflow: hidden;
   margin: auto;
+}
+
+.p-sns-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0 30px;
+  width: 150px;
 }/*# sourceMappingURL=home.css.map */
