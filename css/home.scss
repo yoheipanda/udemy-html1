@@ -31,6 +31,10 @@
     &--sns{
     margin-top: 65px;
   }
+　//.p-section--map
+    &--map{
+      margin-top: 50px;
+    }
 }
 
 .p-message-text{
@@ -74,4 +78,10 @@ margin-top: 52px;
       top: -4px;
     }
 }
+}
+
+.p-gmap{
+  border-style: none;
+  width: 100%;
+  height: 400px;
 }
