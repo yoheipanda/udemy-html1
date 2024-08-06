@@ -26,10 +26,11 @@
       &--gallery{
       margin-top: 165px;
       }
-    }
+    
   // .p-section--sns
     &--sns{
     margin-top: 65px;
+  }
 }
 
 .p-message-text{
@@ -55,9 +56,22 @@ margin-top: 52px;
   margin: auto;
 }
 
+/*                店舗情報(sns)
+======================================================= */
 .p-sns-icons{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap:0 30px;
   width: 150px;
+}
+
+@media only screen and (min-width: 768px) {
+  .p-sns-icons__item{
+    top: 0;
+    position: relative;
+    transition: all 0.5s;
+    &:hover{
+      top: -4px;
+    }
+}
 }
