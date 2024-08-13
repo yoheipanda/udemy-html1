@@ -164,7 +164,7 @@ a {
   padding: 40px 0;
   font-weight: bold;
 }
-.c-link-btnlink {
+.c-link-btn:link {
   color: #122444;
 }
 @media only screen and (min-width: 768px) {
@@ -175,6 +175,11 @@ a {
     background: #fc4e01;
     color: #fff;
     transition: all 0.5s;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .c-link-btn {
+    height: 80px;
   }
 }
 
@@ -226,6 +231,73 @@ a {
     position: absolute;
     opacity: 0;
     transition: all 0.5s;
+  }
+}
+/*                Utility
+======================================================= */
+@media only screen and (min-width: 768px) {
+  .u-hover-line:hover .u-hover-line-child::before {
+    width: 100%;
+    left: 0%;
+    opacity: 1;
+  }
+  .u-hover-line-child {
+    display: inline-block;
+    position: relative;
+    padding: 0 0.1em;
+  }
+  .u-hover-line-child::before {
+    position: absolute;
+    display: block;
+    width: 0%;
+    height: 1px;
+    left: 50%;
+    bottom: -0.3em;
+    content: "";
+    background: #122444;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .u-sp-br {
+    display: block;
+  }
+}
+
+/*                footer
+======================================================= */
+.l-ft {
+  padding: 54px 0 35px;
+  background: #0a182b;
+}
+@media only screen and (max-width: 767px) {
+  .l-ft {
+    padding: 38px 0 18px;
+  }
+}
+
+.p-ft__logo {
+  display: flex;
+  justify-content: center;
+}
+
+.p-ft__copyright {
+  margin-top: 46px;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  .p-ft__logo-img {
+    max-width: 210px;
+    margin: auto;
+    display: block;
+  }
+  .p-ft__copyright {
+    margin-top: 28px;
   }
 }
 /*                sp_menu
@@ -320,7 +392,7 @@ html.is-fixed {
 }
 
 .p-mail-info {
-  margin: top 46px;
+  margin-top: 46px;
 }
 
 .p-phone-info {
@@ -328,7 +400,11 @@ html.is-fixed {
   margin-top: 46px;
 }
 
-p-phone-info__txt {
+.p-phone-info__txt {
+  font-weight: bold;
+}
+
+.p-phone-info__num {
   display: block;
   font-weight: bold;
   font-size: 40px;
