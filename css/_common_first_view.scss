@@ -123,4 +123,26 @@
   &--03{
     top: 16px;
   }
- }
+}
+
+.l-sp-menu {
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  height: 100vh;
+  width: 100vw;
+
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.3s ease transform, 0.3s ease opacity;
+  &.is-active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+  

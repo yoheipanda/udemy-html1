@@ -31,6 +31,27 @@
   top: 16px;
 }
 
+.l-sp-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100vh;
+  width: 100vw;
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.3s ease transform, 0.3s ease opacity;
+}
+@media only screen and (min-width: 768px) {
+  .l-sp-menu {
+    display: none;
+  }
+}
+.l-sp-menu.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /*                共通
 ======================================================= */
 .l-wrapper {
