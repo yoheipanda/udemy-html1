@@ -38,18 +38,17 @@
   z-index: 10;
   height: 100vh;
   width: 100vw;
-  pointer-events: none;
-  opacity: 0;
-  transition: 0.3s ease transform, 0.3s ease opacity;
 }
 @media only screen and (min-width: 768px) {
   .l-sp-menu {
     display: none;
   }
 }
-.l-sp-menu.is-active {
-  opacity: 1;
-  pointer-events: auto;
+
+.p-sp-menu {
+  height: 100%;
+  background: #fff;
+  overflow-y: auto;
 }
 
 /*                共通
@@ -124,6 +123,7 @@
   min-width: 150px;
   background: #122444;
   color: #fff;
+  position: relative;
 }
 @media only screen and (min-width: 768px) {
   .p-hd__link--reserve-link {
