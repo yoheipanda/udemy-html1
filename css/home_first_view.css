@@ -38,6 +38,8 @@
   z-index: 10;
   height: 100vh;
   width: 100vw;
+  opacity: 0;
+  pointer-events: none;
 }
 @media only screen and (min-width: 768px) {
   .l-sp-menu {
@@ -65,7 +67,6 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background: #122444;
 }
 
 .p-sp-menu__link {
@@ -76,6 +77,11 @@
   font-weight: bold;
   color: #122444;
   font: size 18px;
+}
+.p-sp-menu__link--reserve-btn {
+  background-color: #122444;
+  color: #fff;
+  height: 93px;
 }
 
 /*                共通
