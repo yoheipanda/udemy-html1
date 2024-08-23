@@ -17,18 +17,29 @@
   font-weight: bold;
   line-height: 1.5;
   letter-spacing: 0.1em;
+  @media only screen and (max-width:767) {
+    font-size: 30px;
+    line-height: 1.7;
+  }
 }
 
 /*                本文テキスト
 =======================================================*/
 .c-section-text{
   line-height: 2.6;
+  @media only screen and (min-width:767px) {
+    font-size: 14px;
+    line-height: 2.4;
+  }
 }
 
 .c-grid-images{
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-gap: 20px 40px;
+  @media only screen and(max-width:767px) {
+    grid-gap: 18px 8px;
+  }
 }
 
 .c-grid-images__item{
@@ -178,6 +189,8 @@
     display: block;
   }
 }
+
+
 
 /*                footer
 ======================================================= */

@@ -109,11 +109,23 @@ a {
   line-height: 1.5;
   letter-spacing: 0.1em;
 }
+@media only screen and (max-width: 767) {
+  .c-section-title {
+    font-size: 30px;
+    line-height: 1.7;
+  }
+}
 
 /*                本文テキスト
 =======================================================*/
 .c-section-text {
   line-height: 2.6;
+}
+@media only screen and (min-width: 767px) {
+  .c-section-text {
+    font-size: 14px;
+    line-height: 2.4;
+  }
 }
 
 .c-grid-images {
@@ -323,9 +335,19 @@ html.is-fixed {
 .l-section {
   padding-top: 180px;
 }
+@media only screen and (max-width: 767px) {
+  .l-section {
+    padding-top: 100px;
+  }
+}
 
 .p-section {
   padding: 0 50px;
+}
+@media only screen and (max-width: 767px) {
+  .p-section {
+    padding-top: 38px;
+  }
 }
 .p-section--gallery {
   margin-top: 165px;

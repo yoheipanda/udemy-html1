@@ -18,13 +18,23 @@
 }
 .l-section{
   padding-top: 180px;
+  @media only screen and (max-width: 767px){
+    padding-top: 100px;
+  }
 }
 
 .p-section{
   padding: 0 50px;
+  @media only screen and (max-width:767px) {
+    padding-top:38px;
+  }
       // .p-section--gallery
       &--gallery{
       margin-top: 165px;
+      @media only screen and(max-width: 767) {
+        margin-top: 88px;
+        padding: 0;
+      }
       }
     
   // .p-section--sns
