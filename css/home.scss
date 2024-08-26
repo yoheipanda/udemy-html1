@@ -25,13 +25,13 @@
 
 .p-section{
   padding: 0 50px;
-  @media only screen and (max-width:767px) {
+  @media only screen and (max-width:767px){
     padding-top:38px;
   }
       // .p-section--gallery
       &--gallery{
       margin-top: 165px;
-      @media only screen and(max-width: 767) {
+      @media only screen and (max-width: 767px){
         margin-top: 88px;
         padding: 0;
       }
@@ -41,7 +41,7 @@
     &--sns{
     margin-top: 65px;
   }
-　//.p-section--map
+  //.p-section--map
     &--map{
       margin-top: 50px;
     }
@@ -58,6 +58,11 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 0 40px;
+  @media only screen and (max-width: 767px) {
+    margin-top: 40px;
+    grid-template-columns: 1fr;
+    grid-gap: 38px 0;
+  }
 }
 
 .p-owner-introduction__text{
