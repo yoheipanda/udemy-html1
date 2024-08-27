@@ -1,0 +1,185 @@
+@use "setting" as *;
+////////////////////////////////////////////////////////////
+///     　　　　　全ページ共通の　first_view   　　　　　////
+////////////////////////////////////////////////////////////
+@mixin common_first_view {
+  .l-wrapper {
+    overflow: hidden;
+    padding-top: 80px;
+    @media only screen and (max-width: 767px) {
+      padding-top: 60px;
+    }
+  }
+.l-hd{
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.p-hd{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 46px;
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  z-index: 1;
+  position: relative;
+  box-shadow: 0px 0px 10px #00000080;
+  @media only screen and (max-width: 767px) {
+    paading: left 30px;
+    height: 60px;
+  }
+}
+.p-hd__nav{
+  height: 100%;
+  @media only screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.p-hd__list{
+  display: flex;
+  height: 100%;
+}
+.p-hd__item{
+  height: 100%;
+}
+.p-hd__link{
+  padding:0 1.5em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $siteColor;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+
+  
+  // .p-hd-link--reserve-link
+  &--reserve-link{
+    padding: 2em;
+    min-width: 150px;
+    background:$siteColor;
+    color: #fff;
+    position: relative;
+
+    @media only screen and (min-width: 768px) {
+      transition: all 0.5s;
+      &:hover{
+        background: $orange;
+      }
+    }
+  
+  }
+  @media only screen and (max-width: 1023px){
+    padding: 0.1em;
+    min-width: 120px;
+  }
+}
+
+
+.p-hd__nav {
+  position: relative;
+  height: 100%;
+  @media only screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.p-hd__list {
+  display: flex;
+  height: 100%;
+}
+ } //@mixin
+
+ .l-sp-menu-btn{
+ @media only screen and (min-width: 1023px) {
+  display: none;
+ }
+ }
+ .p-sp-menu-btn{
+  position: fixed;
+  width: 20px;
+  height: 16px;
+  right: 30px;
+  top: 22px;
+  z-index: 100;
+ }
+
+ .p-sp-menu-btn__border{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: $siteColor;
+
+  &--01{
+    top: 0;
+  }
+  &--02{
+    top: 8px;
+  }
+  &--03{
+    top: 16px;
+  }
+}
+
+.l-sp-menu {
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  height: 100vh;
+  width: 100vw;
+  opacity: 0;
+  pointer-events: none;
+  }
+
+  .p-sp-menu {
+    height: 100%;
+    background: #fff;
+    overflow-y: auto;
+  }
+
+  .p-sp-menu__list{
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .p-sp-menu__item{
+    // .p-sp-menu__item--reserve
+    &--reserve{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  .p-sp-menu__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    font-weight: bold;
+    color: $siteColor;
+    font: size 18px;
+    // .p-sp-menu__link--reserve-btn
+   &--reserve-btn{
+    background-color: $siteColor;
+    color:#fff;
+    height: 93px;
+   } 
+    }
+    
+
