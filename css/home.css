@@ -154,13 +154,29 @@ a {
 .c-info-table__dl:last-child {
   border-bottom: 1px solid #415069;
 }
+@media only screen and (max-width: 767px) {
+  .c-info-table__dl {
+    flex-direction: column;
+    padding: 24px 0 14px;
+  }
+}
 
 .c-info-table__dt {
   width: 120px;
 }
+@media only screen and (max-width: 767px) {
+  .c-info-table__dt {
+    width: 100%;
+  }
+}
 
 .c-info-table__dd {
   width: calc(100% - 120px);
+}
+@media only screen and (max-width: 767px) {
+  .c-info-table__dd {
+    width: 100%;
+  }
 }
 
 .c-info-table__dt, .c-info-table__dd {
@@ -417,6 +433,12 @@ html.is-fixed {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0 30px;
   width: 150px;
+  padding-top: 14px;
+}
+@media only screen and (max-width: 767px) {
+  .p-sns-icons {
+    margin-top: 54px;
+  }
 }
 
 @media only screen and (min-width: 768px) {

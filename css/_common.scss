@@ -59,14 +59,25 @@
   &:last-child{
     border-bottom:1px solid #415069;
   }
+  @media only screen and (max-width:767px) {
+    flex-direction:column;
+    padding: 24px 0 14px;
+
+  }
 }
 
 .c-info-table__dt{
   width: 120px;
+  @media only screen and (max-width:767px) {
+    width: 100%;
+  }
 }
 
 .c-info-table__dd{
   width: calc(100% - 120px);
+  @media only screen and (max-width:767px) {
+    width: 100%;
+  }
 }
 
 .c-info-table__dt, .c-info-table__dd{
