@@ -92,7 +92,7 @@
   display: flex;
   height: 100%;
 }
- } //@mixin
+
 
  .l-sp-menu-btn{
  @media only screen and (min-width: 1023px) {
@@ -128,9 +128,25 @@
 
 .is-active{
   .p-sp-menu-btn__border{
+    //.p-sp-menu-btn__border--02
     &--02{
       opacity: 0;
     }
+    //.p-sp-menu-btn__border--01
+      &--01 {
+        transform: translateY(10px) rotate(45deg);
+      }
+      //.p-sp-menu-btn__border--03
+      &--03 {
+        transform: translateY(-6px) rotate(-45deg);
+      }
+  }
+}
+
+html {
+  &.is-fixed {
+    height: 100vh;
+    overflow: hidden;
   }
 }
 
@@ -191,3 +207,4 @@
     }
     
 
+  }
