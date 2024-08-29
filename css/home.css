@@ -471,6 +471,11 @@ html.is-fixed {
   text-align: center;
   margin-top: 46px;
 }
+@media only screen and (max-width: 480px) {
+  .p-phone-info {
+    margin-top: 50px;
+  }
+}
 
 .p-phone-info__txt {
   font-weight: bold;
@@ -480,4 +485,14 @@ html.is-fixed {
   display: block;
   font-weight: bold;
   font-size: 40px;
+}
+@media only screen and (min-width: 768px) {
+  .p-phone-info__num {
+    pointer-events: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .p-phone-info__num {
+    font-size: 30px;
+  }
 }/*# sourceMappingURL=home.css.map */

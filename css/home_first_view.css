@@ -31,6 +31,10 @@
   top: 16px;
 }
 
+.is-active .p-sp-menu-btn__border--02 {
+  opacity: 0;
+}
+
 .l-sp-menu {
   position: fixed;
   top: 0;
