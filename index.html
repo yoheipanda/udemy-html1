@@ -345,11 +345,18 @@
     <script>
         $("#sp_menu_btn").on("click",function() {
             if($(this).hasClass('is-active')) {
-                $(this).removeClass('is-active')
+                $(this).removeClass('is-active');
+                $('#sp_menu').removeClass('is-active');
             }else{
                 $(this).addClass('is-active');
+                $('#sp_menu').addClass('is-active');
             }
-        });
+        })
+
+        $(".p-sp-menu__link").on("click",function() {
+            $(this).removeClass('is-active');
+             $('#sp_menu').removeClass('is-active');
+       });
     </script>
 </body>
 </html>

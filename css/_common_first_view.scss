@@ -162,7 +162,12 @@ html {
   height: 100vh;
   width: 100vw;
   opacity: 0;
-  pointer-events: none;
+  pointer-events: auto;
+
+  &.is-active{
+    opacity: 1;
+  }
+
   }
 
   .p-sp-menu {

@@ -158,12 +158,15 @@ html.is-fixed {
   height: 100vh;
   width: 100vw;
   opacity: 0;
-  pointer-events: none;
+  pointer-events: auto;
 }
 @media only screen and (min-width: 768px) {
   .l-sp-menu {
     display: none;
   }
+}
+.l-sp-menu.is-active {
+  opacity: 1;
 }
 
 .p-sp-menu {
