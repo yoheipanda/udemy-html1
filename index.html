@@ -352,14 +352,42 @@
                 $(this).addClass('is-active');
                 $('#sp_menu').addClass('is-active');
                 $("html").addClass('is-fixed');
-            }
-        })
+            };
+        });
 
         $(".p-sp-menu__link").on("click",function() {
             $("#sp_menu_btn").removeClass('is-active');
              $('#sp_menu').removeClass('is-active');
              $("html").remove('is-fixed');
        });
+    //    スムーススクロール
+    $('a[href^="#"]').on("click",function(){
+        let speed = 500; // スクロールのスピードを変数にして設定　500=およそ0.5秒
+        let href = $(this).attr("href");
+        // attr=attributeの省略 attribute関数を使ってhrefの値をとることができる
+        let target = $(href == "#" || href == "" ? "html" : href);
+        // 移動先のIDが設定されている要素を取得する。変数名はtargetにする。
+        // こうすることでtargetの中にスクロール先の要素が入るが、もしhrefの値が空だったり#一文字の場合は一番上までスクロールするようにhtmlが入る)
+        // ⇒これはJavascriptの三項演算子と呼ばれる記法を使った指定方法
+        let headerHeight = $("#header").height();
+        let position = target.offset().top - headerHeight;
+        // let headerHeightとlet positionを書くことでスクロール先の座標が作成できる
+        // ポイントはポジションに値を設定する時にheadr分の高さを引いている部分
+        // デザインによってはスクロール後にセクションの上の部分がヘッダーに隠れてしまうことがことがあるので
+        // 基本的にヘッダーの高さを引く。隠れる心配がない場合は引かなくても大丈夫なこともある
+        $("html, body").animate(
+            {
+                scrollTop:position,  
+            },
+            speed,
+            "swing",
+            // jQueryのアニメイト関数でスムーススクロールを実現する
+            // scrollTopで行先の座標を指定。上のletで指定した変数をここで使う。
+            // // "liniear"
+            // "swing"と"liniear"は動きのパターン
+        );
+    });
+
     </script>
 </body>
 </html>
